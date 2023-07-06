@@ -356,12 +356,29 @@ console.log((k==40)&& !(l>50))
 
 //----------------- conditional operator---------------------
 
+/*
 // ternary operator bola jai
 
 let a=(1>8) ? "Yes":"No";
 let b=(1<8) ? "Yes":"No";
 console.log(a)
 console.log(b)
+
+*/
+
+
+
+
+
+//----------------- Assignment operator---------------------
+
+/*
+let a=10;
+console.log(a+=a)
+console.log(a-=a)
+console.log(a*=a)
+console.log(a/=a)
+*/
 
 
 
