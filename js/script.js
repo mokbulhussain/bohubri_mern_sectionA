@@ -254,6 +254,8 @@ console.log(fullword)
 
 // == operator diye 2 ta value maje compaier kore.
 
+/*
+
 let v1=4;
 let v2=5
 console.log(v1==v2)
@@ -301,6 +303,51 @@ console.log(m<=n)
 
 // >= greater than
 console.log(m>=n)
+
+*/
+
+
+
+
+
+
+
+//------------------- Logical  operator------------------------
+
+
+// || ay sign diye or operator bujai. ay sign ar je kuno
+// ak site true hole condition true hobe
+
+let m=40;
+let n=30;
+
+console.log((m==40)|| (n>50))
+console.log((m==80)|| (n<50))
+console.log((m==80)|| (n>50))
+
+
+
+// && ay sign diye and operator bujai. ay sign dara
+// 2  site true hole condition true hobe.
+
+let d=40;
+let c=30;
+
+console.log((d==40)&& (c>50))
+console.log((d==40)&& (c==30))
+console.log((d==80)&& (c>50))
+
+
+
+// ! ay sign diye not operator bujai. ay sign dara
+// 2  site true hole condition true hobe.
+let k=40;
+let l=30;
+console.log((k==40)&& !(l>50))
+console.log((k==40)&& !(l==30))
+console.log((k==40)&& !(l>50))
+
+
 
 
 
