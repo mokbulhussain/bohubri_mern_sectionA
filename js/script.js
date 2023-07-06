@@ -314,6 +314,7 @@ console.log(m>=n)
 
 //------------------- Logical  operator------------------------
 
+/*
 
 // || ay sign diye or operator bujai. ay sign ar je kuno
 // ak site true hole condition true hobe
@@ -346,6 +347,21 @@ let l=30;
 console.log((k==40)&& !(l>50))
 console.log((k==40)&& !(l==30))
 console.log((k==40)&& !(l>50))
+
+*/
+
+
+
+
+
+//----------------- conditional operator---------------------
+
+// ternary operator bola jai
+
+let a=(1>8) ? "Yes":"No";
+let b=(1<8) ? "Yes":"No";
+console.log(a)
+console.log(b)
 
 
 
