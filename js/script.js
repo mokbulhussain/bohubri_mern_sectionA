@@ -220,6 +220,8 @@ console.log(c);
 
 //-------------- String Operator------------
 
+/*
+
 let word1="hello";
 let word2="World"
 
@@ -239,6 +241,69 @@ console.log(fullword)
 
 fullword=4+n+word1
 console.log(fullword)
+
+*/
+
+
+
+
+
+
+
+//--------- --------- comparison operator ------------------
+
+// == operator diye 2 ta value maje compaier kore.
+
+let v1=4;
+let v2=5
+console.log(v1==v2)
+
+v2="4";
+// value match without type
+console.log(v1==v2)
+
+
+
+// === ay sign diye type shoho value compair check kora jai.
+
+let a=5;
+let b="5";
+console.log(a===b)
+
+b=5
+console.log(a===b)
+
+
+// != ay sign diye 2 ta value maje compaier kore.
+let c=6;
+let d=6;
+console.log(c!=d);
+
+
+// !==
+d="d"
+console.log(c!==d)
+
+
+// <, > , >= , <= ay sign diye greate, less than, or equal check kora hoy
+
+let m=10;
+let n=6;
+
+// > grater than
+console.log(m>n)
+
+// < less than
+console.log(m<n)
+
+// <= less than
+console.log(m<=n)
+
+// >= greater than
+console.log(m>=n)
+
+
+
 
 
 
