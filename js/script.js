@@ -192,7 +192,8 @@ console.log(c);
 
 
 
-// increment (++)
+// Decresement (++)
+/*
 let a=6;
 // a--;
 // console.log(a);
@@ -209,6 +210,37 @@ c=a;
 console.log(c)
 c=--a;
 console.log(c);
+
+*/
+
+
+
+
+
+
+//-------------- String Operator------------
+
+let word1="hello";
+let word2="World"
+
+let fullword=word1+word2
+console.log(fullword)
+
+
+let n=40;
+
+// jodi number string ar por take tokon ay ta ke string dorbe
+fullword=word1+word2+n
+console.log(fullword)
+
+
+// jodi 2 ta number string a age deya take tokon 
+// oy 2 ta number add hoye string ar shate join hobe.
+
+fullword=4+n+word1
+console.log(fullword)
+
+
 
 
 
