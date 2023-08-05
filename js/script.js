@@ -384,6 +384,262 @@ console.log(a/=a)
 
 
 
+//-------------------- Data Types-------------
+
+// Number
+// String
+// Boolean
+// Array
+// Object
+// Undefined
+// Empty Value
+// Null
+// NaN - Not a Number
+
+
+
+
+//--------  Number ------
+
+var x;
+x=30;
+console.log(x);
+
+x=10**5
+console.log(x)
+
+x="34" + "45";
+console.log(x)
+
+x=34+"40";
+console.log(x)
+x= 34+60+"70";
+console.log(x)
+x="25"-"5";
+console.log(x);
+x="25"/5;
+console.log(x)
+x="304";
+y=x.toString();
+console.log(y+x);
+x=800
+var d=x.toString(8);
+console.log(d)
+
+var m="30";
+console.log(parseInt(m));
+m=3.14;
+console.log(parseInt(m))
+
+
+// isNaN
+
+var z="hell";
+console.log(isNaN(z));
+
+
+
+
+// ------------- String ---------------
+
+console.log("hello World")
+console.log('Hello')
+console.log("bangladesh 'small' contry")
+console.log('hello \\ world')
+console.log( ' hello \t world')
+console.log('hello \t\t conutry')
+console.log("hello \n world")
+
+
+var z='hello'
+console.log(z.length)
+
+var x='flytechi'
+console.log(x[0])
+
+console.log(x.toUpperCase())
+
+var y= 'mokbul  hussain'
+// space remove
+var z=y.trim();
+console.log(z)
+console.log(y.trim())
+
+
+console.log(z.slice(1,4))
+console.log(z.slice(-5,-1))
+
+
+
+
+//-------------- Boolean-------------
+
+var a=10;
+console.log(a>20)
+
+console.log(a>5)
+
+console.log(a==10)
+
+
+var r;
+console.log(r)
+
+var j=10/"h";
+console.log(j)
+
+var g=""
+console.log(g)
+
+var b=null
+console.log(b)
+
+
+
+
+//-------------------- Array ----------------
+
+var country=["Bangladesh","usa","uk"];
+console.log(country)
+
+// value show
+console.log(country[0])
+
+// lenth
+console.log(country.length)
+
+// change
+country[0]="dhaka";
+console.log(country[0])
+
+// add value
+country[3]='orway';
+console.log(country)
+
+// add value diffrent way
+country[country.length]='turkey';
+console.log(country)
+
+// add value another way
+country.push("china");
+console.log(country)
+
+country.push('lon','us','ame');
+console.log(country)
+
+// add value from first index
+country.unshift("gana")
+console.log(country)
+
+// data delete
+country.pop();
+console.log(country)
+
+// data delete another way
+country.shift();
+console.log(country)
+
+
+// declear array
+
+var numbers=[]
+console.log(numbers)
+
+numbers.push(20);
+console.log(numbers)
+
+
+// split string to array
+var x="Bangladesh";
+
+console.log(x.split(""))
+
+var i="bangladesh is a country";
+var d=i.split(" ")
+console.log(d)
+
+
+// array to sting
+var u=d.toString();
+console.log(u)
+
+// array join
+var k=d.join("/");
+console.log(k)
+
+
+
+// concate array
+var h=['e','ban','len']
+var r=country.concat(h);
+console.log(r)
+
+
+
+// array sort
+console.log(country.sort())
+
+console.log(country.reverse())
+
+
+
+
+
+
+//-----------------  Object Data Type-------------
+
+var student={name:"Rahul",age:20,address:'sylhet'}
+
+console.log(student);
+console.log(student.name);
+console.log(student["name"])
+console.log(student.length)
+
+
+// set new value
+student.ocu="Students"
+console.log(student)
+
+student.village="sunamgonj";
+console.log(student)
+
+
+// delete value
+delete student.village;
+ console.log(student)
+
+
+ // declear object
+var man={}
+man.name="salam";
+man.age=30
+man.address="sylhet";
+console.log(man)
+
+
+
+
+
+
+// -------------- More Array & More Object -----------------
+
+// array
+var ar=[1,2,3,['a','b'],4,5]
+console.log(ar)
+console.log(ar[3][0])
+
+var mar=[1,2,[4,6,[9,34,20]]]
+console.log(mar[2][0])
+
+var m=[1,2,3,{name:"j",age:50},8,10]
+console.log(m[3].name)
+console.log(m[3]['name'])
+
+
+// object
+
+var n={name:"m",prop1:[1,2,4],age:30}
+console.log(n.prop1[0])
 
 
 
@@ -392,4 +648,49 @@ console.log(a/=a)
 
 
 
+// ------- indefiend, empty value , null , nan
+
+//undefined
+var ab;
+console.log(ab)
+
+//null
+var bab=null
+console.log(bab)
+
+// nan
+
+var bb=20/"h";
+console.log(bb)
+
+
+
+
+
+//---------- primitive & referance type---------------------
+
+//--- primitive types
+// number , string , boolean
+// deals with value not address
+var a=7;
+var b=a;
+console.log(b)
+
+// change value but not change b value.
+a=30;
+console.log(b)
+
+
+
+//--- referance type
+// array, object
+// deals with address
+
+var a=[20,40,30];
+var b=a;
+console.log(b)
+
+// change value
+a[1]=50
+console.log(b)
 
