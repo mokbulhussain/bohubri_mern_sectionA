@@ -400,7 +400,7 @@ console.log(a/=a)
 
 
 //--------  Number ------
-
+/*
 var x;
 x=30;
 console.log(x);
@@ -694,3 +694,73 @@ console.log(b)
 a[1]=50
 console.log(b)
 
+
+*/
+
+
+
+/////------------- -- control flow / if , if-else /-----------------
+
+/*
+if(true){
+    console.log("ok")
+}
+else{
+    console.log("no");
+}
+
+// var age=10;
+/*
+var age=70
+
+if(age>=50){
+    console.log("old")
+}else{
+    console.log("under 50")
+}
+*/
+
+
+/*
+var age=20
+
+if(age>=50){
+    console.log("old")
+}
+else if(age==30){
+    console.log("under 50")
+}
+else if(age >=20 && age<=30){
+    console.log("young")
+}
+else{
+    console.log("child")
+}
+
+*/
+
+
+
+
+
+//------------ switch state ment----------
+
+/*
+var choose=prompt();
+
+var text="";
+
+switch(choose){
+    case "a":
+        text="choose a";
+        break;
+    case "b":
+        text="choose b"
+        break;
+    default:
+        text="coose c";
+}
+
+console.log(text);
+
+*/
