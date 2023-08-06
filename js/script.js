@@ -764,3 +764,146 @@ switch(choose){
 console.log(text);
 
 */
+
+
+
+
+
+
+//---------------------- loop---------------------
+
+
+// ------------------ while loop------------------
+/*
+var i=1;
+while(i<=5){
+    console.log(i)
+    i++;
+}
+*/
+
+
+
+// do while loop
+/*
+var i=1;
+do{
+    console.log(i)
+    i++;
+}while(i<=5)
+*/
+
+
+/// more while loop
+
+/*
+var i=0;
+var sum=0;
+
+while(i<10){
+    if(i==4){
+        console.log("this is 4")
+    }
+    i++;
+    sum=sum+i;
+
+    console.log(i)
+}
+console.log(sum);
+*/
+
+
+
+
+
+//----------------- for loop-------------
+
+/*
+for(var j=1; j<=5;j++){
+    console.log(j);
+}
+
+for(var k=10; k>1;k--){
+    console.log(k)
+}
+
+*/
+
+
+// -- loop break condition
+
+/*
+for(var i=1; i<10;i++){
+    if(i==3){
+        break;
+    }
+    console.log(i)
+}
+*/
+
+
+// continue condition
+/*
+for(var i=1; i<10;i++){
+    if(i==3){
+        continue;
+    }
+    console.log(i)
+}
+*/
+
+
+/*
+var name="i am leargning";
+var len=name.length;
+
+for(var i=0; i<len; i++){
+    console.log(name[i])
+}
+*/
+
+
+
+
+// --- for in , for of loop---------
+
+let name="i am learnign banglad";
+let food=['cake','biskut','naste']
+let person={
+    name:'sakib',
+    profession:'teacher',
+    age:30
+}
+
+
+// for in
+for (var x in name){
+    console.log(name[x])
+}
+
+
+for (var x in food){
+    console.log(food[x])
+}
+
+
+for (var y in person){
+    console.log(y)
+    console.log(person[y])
+}
+
+
+// for of
+for (var x of food){
+    console.log(x)
+}
+
+// for of doesnot allow in object
+
+
+
+
+
+
+
+
