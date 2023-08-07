@@ -866,7 +866,7 @@ for(var i=0; i<len; i++){
 
 
 // --- for in , for of loop---------
-
+/*
 let name="i am learnign banglad";
 let food=['cake','biskut','naste']
 let person={
@@ -899,6 +899,252 @@ for (var x of food){
 }
 
 // for of doesnot allow in object
+
+*/
+
+
+
+
+
+///------------------  Function -------------------
+
+// building function
+// alert("hello");
+
+
+
+// user defiend function
+
+// decleration function
+/*
+function somthing(){
+    console.log("print somethind");
+    console.log("print ok")
+}
+
+//excute function
+somthing();
+
+*/
+
+
+
+
+//----------- function parameter/ argument------------
+
+
+// parameter with argument
+/*
+function something(a,b){
+    console.log(a+b);
+}
+
+something(20,30)
+*/
+
+
+
+// default parameter
+/*
+function something(a=0,b=7){
+    console.log(a+b);
+}
+something()
+
+something(30,40)
+
+let n=10;
+let m=40;
+something(n,m)
+*/
+
+
+
+// return function
+
+/*
+function something(a,b){
+    return a+b;
+    console.log("check below line")
+}
+console.log(something(30,50));
+let sum=something(2,2)
+console.log(sum)
+*/
+
+
+
+
+
+//----  function type --------------------
+
+// named function
+/*
+
+function somthing(name){
+   console.log(`my name is ${name}`);
+}
+
+// expression function
+let somthing=function(name){
+    console.log(`my name is ${name}`)
+}
+
+*/
+// arrow function
+/*
+const somthing=(name)=>{
+    console.log(`my name is ${name}`)
+}
+somthing("Mokbul")
+*/
+
+
+
+//------------- array iteration with foreach & map function
+
+var foods=['katal','am','lisu','apple']
+var numbers=[2,4,5,6]
+
+// 1st parameter = item,
+// 2nd parameter = index
+//3rd parameter = whole array
+/*
+foods.forEach(function(item,index){
+    console.log(item)
+    console.log(index)
+})
+*/
+
+
+/*
+// map
+
+foods.map(function(item){
+    console.log(item)
+})
+
+//create new array but foreach not create new array
+let food_item=foods.map(function(item){
+    return item
+})
+console.log(food_item)
+
+
+function squre(item){
+    return item*item
+}
+
+let num_sq=numbers.map(squre);
+
+console.log(num_sq)
+*/
+
+
+
+//--------- object method ----------
+
+/*
+let person={
+    firstname:'mokbul',
+    lastname:'hussain',
+    dob:'9-10-2023',
+    fullname:function(){
+        return `${this.firstname} ${this.lastname}`
+    }
+}
+
+console.log(person.fullname())
+*/
+
+
+//------- math object--------
+
+/*
+let val;
+val=Math.PI;
+val=Math.E;
+val=Math.round(3.1);
+val=Math.ceil(3.1);
+val=Math.floor(1.9);
+val=Math.sqrt(81);
+val=Math.abs(-81);
+val=Math.pow(2,3);
+val=Math.min(2,3);
+val=Math.max(2,3);
+val=Math.random();
+val=Math.random()*10;
+val=Math.floor(Math.random()*10);
+console.log(val)
+
+*/
+
+
+//-------------- Date object --------------
+
+/*
+let val;
+val=new Date();
+val=new Date('August 26 1996');
+let today=new Date();
+val=today.getDay()
+val=today.getMonth()
+val=today.getFullYear()
+val=today.getMinutes()
+val=today.getMilliseconds()
+val=today.getTime()
+// val=today.setMonth(12)
+
+console.log(val)
+*/
+
+
+
+
+//--------- Global & local  scope-----------
+
+// global scope
+var a=1;
+let b=3;
+const c=5;
+console.log('global scope: '+ a,b,c);
+
+
+// function scope
+
+function some(){
+    var a=4;
+    let b=7;
+    const c=8;
+    console.log('function scope: '+ a,b,c)
+}
+some();
+console.log('global scope: '+ a,b,c);
+
+
+// if scope
+// if scope var change hoye jai. but let change oy na
+if(true){
+    var a=9;
+    let b=11;
+    const c=16;
+    console.log('if scope: '+ a,b,c)
+}
+console.log('global scope: '+ a,b,c);
+
+
+
+// for scope
+// for scope var change hoye jai. but let change oy na
+for(var a=0; a<10; a++){
+ 
+    console.log('for scope: '+ a)
+}
+console.log('global scope: '+ a,b,c);
+
+
+
+
 
 
 
