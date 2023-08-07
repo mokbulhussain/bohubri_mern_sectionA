@@ -1102,7 +1102,7 @@ console.log(val)
 
 
 //--------- Global & local  scope-----------
-
+/*
 // global scope
 var a=1;
 let b=3;
@@ -1141,6 +1141,83 @@ for(var a=0; a<10; a++){
     console.log('for scope: '+ a)
 }
 console.log('global scope: '+ a,b,c);
+
+*/
+
+
+
+
+//--------------- class -----------------------
+
+/*
+class Person{
+    constructor(fname,lname,birthday){
+        this.fname=fname;
+        this.lname=lname;
+        this.dob=birthday
+    }
+
+    fullname(){
+        return this.fname+" "+this.lname;
+    }
+}
+
+let person1=new Person('mokbul','hussain','12-22-3023')
+let person2=new Person('mokbul2','hussain2','12-22-3023')
+
+console.log(person1.fullname())
+console.log(person2.fullname())
+
+*/
+
+
+
+
+//-------------- sub class / inheritance --------------
+
+class Person{
+    constructor(fname,lname,dob){
+        this.fname=fname,
+        this.lname=lname,
+        this.dob=dob
+    }
+
+    fullname(){
+        return this.fname+this.lname
+    }
+}
+
+class Customer extends Person{
+    constructor(fname,lname,address,mobile){
+        super(fname,lname)
+
+        this.address=address,
+        this.mobile=mobile
+    }
+}
+
+let customer1=new Customer('salam','hasan','sylhet','01236578')
+console.log(customer1);
+console.log(customer1.fullname())
+
+
+
+
+// --------------- static method for class --------
+
+class Man{
+    static test(){
+        return "this static methods";
+    }
+}
+
+let man1=new Man()
+console.log(Man.test())
+
+
+
+
+
 
 
 
