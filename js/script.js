@@ -1472,6 +1472,7 @@ console.log(list)
 //------------ Event Listener with Dom----------------------
 
 
+/*
 let btn=document.getElementById('simple_btn')
 console.log(btn)
 btn.addEventListener('click',message)
@@ -1507,6 +1508,41 @@ val=this
 this.style.background='red';
 console.log(this)
 }
+
+*/
+
+
+
+
+
+
+
+//--------------- Error Handling---------------
+
+// console.log('before error')
+// try{
+//     test();
+// }catch(err){
+//     console.log(err.message)
+//     console.log(err.name)
+// }finally{
+//     console.log('i am inside finaly')
+// }
+
+// console.log('after error')
+
+
+
+// error throw generate
+
+let a=20;
+try{
+   if(a>5) throw "too big";
+   else if(a<1) throw 'too small'
+}catch(err){
+    console.log(err)
+}
+
 
 
 
