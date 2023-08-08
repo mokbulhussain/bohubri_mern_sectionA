@@ -1003,8 +1003,8 @@ somthing("Mokbul")
 
 //------------- array iteration with foreach & map function
 
-var foods=['katal','am','lisu','apple']
-var numbers=[2,4,5,6]
+// var foods=['katal','am','lisu','apple']
+// var numbers=[2,4,5,6]
 
 // 1st parameter = item,
 // 2nd parameter = index
@@ -1174,7 +1174,7 @@ console.log(person2.fullname())
 
 
 //-------------- sub class / inheritance --------------
-
+/*
 class Person{
     constructor(fname,lname,dob){
         this.fname=fname,
@@ -1213,6 +1213,305 @@ class Man{
 
 let man1=new Man()
 console.log(Man.test())
+
+*/
+
+
+
+
+
+///--------------------  DOM --------------
+
+// var val;
+// val=this
+// val=window
+// val=window.document
+// val=document
+// val=document.all
+// val=document.all.length
+// val=document.head
+// val=document.body
+// val=document.doctype
+// val=document.domain
+// val=document.contentType
+// val=document.forms
+// // val=document.forms[0];
+// // val=document.forms[0].method;
+// // val=document.forms[0].action;
+// val=document.links;
+// val=document.links[0];
+// val=document.links[0].href;
+// val=document.links[0].className;
+// val=document.links[0].classList;
+
+// console.log(val)
+
+
+
+
+
+//---------------- Dom Selector (Single Element)-----------------
+
+/*
+let val;
+val=document.getElementById('title');
+val=document.getElementById('title').classList;
+val=document.getElementById('title').className;
+// console.log(val)
+
+val=document.getElementById('title');
+val.style.background="red"
+val.style.color="blue"
+val.style.padding="20px"
+val.style.display="none"
+val.style.display="block"
+val.textContent="Hello javascript"
+val.innerHTML="Hello javascripts"
+val.innerHTML="<i>Hello javascripts</i>"
+
+
+// querySelector
+
+val=document.querySelector('.title');
+val=document.querySelector('h1');
+val=document.querySelector('#title');
+
+val=document.querySelector('ol');
+val=document.querySelector('li');
+val=document.querySelector('ol li');
+val.style.background='red'
+val.style.color='blue'
+val=document.querySelector('li:last-child');
+val.style.color='blue'
+val=document.querySelector('li:nth-child(1)');
+val.style.color='orange'
+val=document.querySelector('li:nth-child(2)');
+val.style.color='orange'
+val.innerHTML="dart"
+console.log(val)
+
+*/
+
+
+
+// ------- multiple selector dom -----
+
+/*
+let list=document.getElementsByClassName('simple')
+// console.log(list)
+list[0].style.background='black'
+list[0].style.color='red'
+list[0].textContent='black'
+
+
+// get tag name
+
+list=document.getElementsByTagName('li')
+list[3].style.color="blue"
+
+list=document.querySelector('ol').getElementsByTagName('li');
+
+let lis=Array.from(list)
+lis.forEach(function(item){
+    // console.log(item)
+})
+
+list=document.querySelectorAll('ol li');
+list.forEach(function(item){
+    // console.log(item)
+})
+
+let listOdd=document.querySelectorAll('li:nth-child(odd)');
+listOdd.forEach(function(item){
+    console.log(item)
+    item.style.background='orange'
+})
+
+let listEven=document.querySelectorAll('li:nth-child(even)');
+listEven.forEach(function(item){
+    console.log(item)
+    item.style.background='red'
+})
+// console.log(list)
+
+*/
+
+
+
+// -- Traversing 
+/*
+let val;
+let list=document.querySelector('ul');
+let listItem=document.querySelector('ul li:last-child');
+val=list;
+// console.log(val)
+val=listItem;
+// console.log(val)
+
+
+// get child node
+
+val=list;
+val=list.childNodes
+val=list.childNodes[0]
+val=list.childNodes[1]
+val=list.childNodes[2].nodeName
+val=list.childNodes[2].nodeType
+
+
+// get child using childern
+
+val=list.children
+val=list.children[1]
+list.children[0].textContent="youtuve";
+val=list.children[1].children[0]
+val=list.children[1].children[0].href
+
+val=list.firstElementChild
+val=list.lastElementChild
+val=list.childElementCount;
+
+let listItem2=document.querySelector('li:first-child');
+val=listItem2.parentElement
+val=listItem2.parentElement.parentElement
+val=listItem2.nextElementSibling.nextElementSibling
+let listItem3=document.querySelector('li:last-child');
+val=listItem3.previousElementSibling
+console.log(val)
+
+*/
+
+
+
+//-------- Add Element with Dom -----------
+
+/*
+let olItem=document.createElement('li');
+olItem.className="item-list";
+olItem.id="item_list"
+olItem.innerHTML='javascript'
+// console.log(olItem)
+document.querySelector('ol').append(olItem)
+
+
+let ulItem=document.createElement('li');
+let link=document.createElement('a');
+link.className='demo';
+link.setAttribute('href','https//:facebook.com')
+link.innerHTML='Instagram'
+ulItem.appendChild(link)
+document.querySelector('ul').append(ulItem)
+console.log(ulItem)
+console.log(link)
+
+*/
+
+
+// ------- Replace Element with dom--------------
+/*
+let newheading=document.createElement('h1');
+newheading.innerHTML="Javascript Dom";
+
+let oldheading=document.querySelector('h4');
+
+console.log(newheading)
+console.log(oldheading)
+
+let parents=document.querySelector('.container');
+console.log(parents)
+
+parents.replaceChild(newheading,oldheading);
+*/
+
+
+
+// ------- Remove Element with dom----------
+
+/*
+let listItem=document.querySelectorAll('li');
+let list=document.querySelector('ul');
+
+listItem[0].remove()
+listItem[5].remove()
+
+
+console.log(listItem)
+console.log(list)
+
+
+//----------- add class-------------------- 
+list.classList.add('test')
+list.classList.add('test2')
+
+//-------------- remove class ------------------
+list.classList.remove('test')
+console.log(list)
+
+
+
+//------------ add attribute--------
+
+// let listtitle=list.hasAttribute('title')
+// let listtitle=list.hasAttribute('class')
+let listtitle=list.setAttribute('title','list-title')
+console.log(listtitle)
+console.log(list)
+
+//------------ remove attribute-----------
+list.removeAttribute('title')
+console.log(list)
+
+*/
+
+
+
+
+
+
+
+//------------ Event Listener with Dom----------------------
+
+
+let btn=document.getElementById('simple_btn')
+console.log(btn)
+btn.addEventListener('click',message)
+
+// function message(){
+//     alert("hello");
+// }
+
+
+function message(e){
+   let val=e;
+   val=e.target
+   val=e.target.id
+   val=e.timeStamp
+   val=e.type
+   val=e.clientY
+   val=e.clientX
+   val=e.offsetY
+   val=e.offsetX
+   console.log(val)
+   
+}
+
+
+let input=document.getElementById('name')
+input.addEventListener('focus',insert)
+
+
+
+function insert(e){
+let val=e
+val=this
+this.style.background='red';
+console.log(this)
+}
+
+
+
+
+
 
 
 
