@@ -1534,7 +1534,7 @@ console.log(this)
 
 
 // error throw generate
-
+/*
 let a=20;
 try{
    if(a>5) throw "too big";
@@ -1542,7 +1542,121 @@ try{
 }catch(err){
     console.log(err)
 }
+*/
 
+
+
+
+
+
+
+// ------------------------ json Data ---------------------------------
+
+/*
+let student_obj={
+    name:'m',
+    age:30,
+    class:4
+}
+
+console.log(student_obj);
+
+// object ot json
+
+let new_student_json=JSON.stringify(student_obj)
+console.log(new_student_json)
+
+// json to object
+
+let old_student_obj=JSON.parse(new_student_json);
+console.log(old_student_obj)
+
+*/
+
+
+
+//------- josn supported data
+
+// https://jsonlint - data valitade check
+
+/*
+let person={
+    name: "rahman", // string
+    age:20, // number
+    hometown: 'dhaka',
+    married: false, // Boolean
+    dob: 1995-5-12, // date
+    test_null: null, // null
+    test_undefined: undefined, //undefined
+    greet: function(){
+        console.log(`Hello ${this.name}`)
+    }
+}
+
+console.log(person)
+
+// convert json
+
+let person_json=JSON.stringify(person);
+console.log(person_json)
+
+// json not supported  date, undefined, function data.
+
+*/
+
+
+
+//-------- json data behavier same object
+// must be object convert to json
+
+/*
+
+let person={
+    'name':'mok',
+    'age':20,
+    'address':'sylhet'
+}
+
+console.log(person)
+console.log(person.name)
+// this show object but write json.
+// so convert object o json.
+
+console.log(JSON.stringify(person))
+
+*/
+
+
+
+
+//------ external json data render using http request ajax ---
+
+var xmlhttp=new XMLHttpRequest();
+xmlhttp.onreadystatechange=function(){
+    if(this.readyState==4 && this.status==200){
+        var data=this.responseText;
+        // console.log(data);
+        jsondata(data)
+    }
+}
+
+xmlhttp.open("GET","data.json",true);
+xmlhttp.send();
+
+function jsondata(data){
+    console.log(data);
+    var json_obj=JSON.parse(data)
+    // console.log(json_obj)
+    for(x in json_obj.persons){
+        // console.log(x)
+        var person=json_obj.persons;
+        console.log(person[x])
+
+        for(y in person[x]){
+            console.log(y)
+        }
+    }
+}
 
 
 
