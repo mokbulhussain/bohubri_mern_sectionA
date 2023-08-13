@@ -1631,6 +1631,7 @@ console.log(JSON.stringify(person))
 
 //------ external json data render using http request ajax ---
 
+/*
 var xmlhttp=new XMLHttpRequest();
 xmlhttp.onreadystatechange=function(){
     if(this.readyState==4 && this.status==200){
@@ -1657,6 +1658,81 @@ function jsondata(data){
         }
     }
 }
+
+*/
+
+
+
+
+
+
+
+
+///--------------- Ajax ---------------------
+
+// document.getElementById('get_data_btn').addEventListener('click',loadData)
+
+// function loadData(){
+//     var xttp=new XMLHttpRequest();
+
+//     xttp.open('GET','datas.txt',true);
+
+//     xttp.onload=function(){
+
+//         if(this.status===200){
+//             console.log(this.status);
+//             document.getElementById('output').innerHTML=`<h4>${this.responseText}</h4>`
+//         }
+       
+//     }
+
+//     xttp.send();
+//     // console.log(xttp);
+
+// }
+
+
+
+
+///--------------- Ajax   External Data---------------------
+
+
+
+
+document.getElementById('get_data_btn').addEventListener('click',loadData)
+
+function loadData(){
+    var xttp=new XMLHttpRequest();
+
+    xttp.open('GET','https://jsonplaceholder.typicode.com/users',true);
+
+    xttp.onload=function(){
+
+        if(this.status===200){
+            console.log(this.status);
+            let data=JSON.parse(this.responseText)
+           
+            let output="<ol>"
+            data.forEach(function(item){
+                output+=`<li>${item.name}</li>`
+            });
+            output+='</ol>';
+
+            document.getElementById('output').innerHTML=output
+        }
+       
+    }
+
+    xttp.send();
+    // console.log(xttp);
+
+
+
+}
+
+
+
+
 
 
 
